@@ -140,14 +140,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    void showError()
+    {
+        Toast.makeText(this, "Произошла ошибка при соединении", Toast.LENGTH_LONG).show();
+    }
+
     private void openSettings()
     {
         Intent myIntent = new Intent(this, SettingsActivity.class);
         startActivity(myIntent);
     }
 
-    void showError()
-    {
-        Toast.makeText(this, "Произошла ошибка при соединении", Toast.LENGTH_LONG).show();
-    }
 }
